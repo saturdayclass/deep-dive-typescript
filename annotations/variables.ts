@@ -24,10 +24,13 @@ const logNumber: (i: number) => void = (i: number) => {
   console.log(i);
 };
 
-// Any Type Example
+/* 
+when to use annotation
+1) function that return the any type like example below
+*/
 const json = '{"x": 10, "y": 20}';
-const coordinates = JSON.parse(json);
+const coordinates: { x: number; y: number } = JSON.parse(json);
 /* 
 note: Kalo di perhatikan constanta coordinates disini menggunakan any type.
-kenapa? karena function JSON.parse() akan men-parse nilai dari property yg akan di parse sesuai dengan tipe data nilainya. Maka dari itu typescript tidak dapat memprediksi type apa yang digunakan oleh si constanta coordinates
+kenapa? karena function JSON.parse() akan men-parse nilai dari property yg akan di parse sesuai dengan tipe data nilainya. Maka dari itu typescript tidak dapat memprediksi type apa yang digunakan oleh si constanta coordinates karena mungkin saja dalam memparse json banyak sekali tipe data yang di parse.
 */
