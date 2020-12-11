@@ -34,3 +34,17 @@ const coordinates: { x: number; y: number } = JSON.parse(json);
 note: Kalo di perhatikan constanta coordinates disini menggunakan any type.
 kenapa? karena function JSON.parse() akan men-parse nilai dari property yg akan di parse sesuai dengan tipe data nilainya. Maka dari itu typescript tidak dapat memprediksi type apa yang digunakan oleh si constanta coordinates karena mungkin saja dalam memparse json banyak sekali tipe data yang di parse.
 */
+
+/*
+when to use annotation
+3) variable whose type cannot be inferred correctly
+*/
+
+let numbers = [-1, -10, 12];
+let numberAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbers.length; i++) {
+  if (numbers[i] > 0) {
+    numberAboveZero = numbers[i];
+  }
+}
