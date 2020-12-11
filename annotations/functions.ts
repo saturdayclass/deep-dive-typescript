@@ -31,3 +31,17 @@ const logger = (message: string): void => {
 const throwError = (message: string): never => {
   throw new Error(message);
 };
+
+// Example desctructing with annotations
+const todayWaters = {
+  date: new Date(),
+  weather: 'suny',
+};
+
+// Note : sedikit catatan ketika kita mendesctrucing object dalam parameter kemudian ingin memberikan type annotations ke desctrucing object tsb. Kita harus menyesuaikan urutan antara desctrucing object dengan pemberian desctrucing type.
+const logWeather = ({ date, weather }: { date: Date; weather: string }) => {
+  console.log(date);
+  console.log(weather);
+};
+
+logWeather(todayWaters);
