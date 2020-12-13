@@ -11,7 +11,7 @@ const profile = {
   },
 };
 
-const { age }: { age: number } = profile;
+const { name, age }: { name: string; age: number } = profile;
 const {
   coords: { lat, lng },
 }: { coords: { lat: number; lng: number } } = profile;
