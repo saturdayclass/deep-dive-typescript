@@ -1,7 +1,7 @@
 // Example Type Annotations in Array
 const carMakers: string[] = ['Toyota', 'Ford', 'BMW'];
 const dates = [new Date(), new Date(), new Date()];
-const carsByMakes: string[][] = [['f150'], ['corolla'], ['camaro']];
+const carsByMakes: (string | number)[][] = [[2], ['corolla'], ['camaro']];
 
 /* Why do we care?
 1). Ts can co type inference when extracting values from an array
