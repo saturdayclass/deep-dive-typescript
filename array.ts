@@ -9,3 +9,15 @@ const carsByMakes: string[][] = [['f150'], ['corolla'], ['camaro']];
 3). We can get help with 'map', 'forEach, 'reduce' function
 4). Flexible - arrays can be still contain multiple different types
 */
+
+// Example reason number one
+const car1 = carMakers[0];
+const removeLastCar = carMakers.pop();
+
+// Example reason number two
+// const addCar = carMakers.push(2)
+
+// Example reason number three
+carMakers.map((data) => {
+  return data;
+});
