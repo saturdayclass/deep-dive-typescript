@@ -19,5 +19,5 @@ const removeLastCar = carMakers.pop();
 
 // Example reason number three
 carMakers.map((data) => {
-  return data;
+  return data.toUpperCase();
 });
