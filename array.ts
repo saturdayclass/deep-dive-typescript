@@ -21,3 +21,8 @@ const removeLastCar = carMakers.pop();
 carMakers.map((data) => {
   return data.toUpperCase();
 });
+
+// Example reason number four
+const importantDate = [new Date(), '2020-10-10'];
+importantDate.push('ok');
+// importantDate.push(2) can't
