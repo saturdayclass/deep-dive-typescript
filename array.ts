@@ -23,6 +23,6 @@ carMakers.map((data) => {
 });
 
 // Example reason number four
-const importantDate = [new Date(), '2020-10-10'];
+const importantDate: (String | Date)[] = [new Date(), '2020-10-10'];
 importantDate.push('ok');
 // importantDate.push(2) can't
