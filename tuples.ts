@@ -15,5 +15,5 @@ const sprite = ['brown', true, 30];
 // Type Alias
 type Drink = [string, boolean, number];
 
-const sprite1: Drink = ['Brown', true, 30];
 const fanta: Drink = ['Red', true, 30];
+const cocaCola: Drink = ['black', true, 30];
