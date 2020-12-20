@@ -8,7 +8,12 @@ class Vehicle {
   }
 }
 
-class Car extends Vehicle {}
+class Car extends Vehicle {
+  // Overriding
+  drive(): void {
+    console.log('gas gas');
+  }
+}
 
 const car = new Car();
 car.drive();
