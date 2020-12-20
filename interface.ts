@@ -1,9 +1,6 @@
 // Interface adalah sebuah feature dalam typescript yang digunakan untuk membuat sebuah type baru yang mendeskripsikan nama property dan value pada sebuah object.
 // Kita bisa memasukan macam-macam type tidak hanya string, number, boolean dll.
-interface Vehicle {
-  name: string;
-  year: number;
-  broken: boolean;
+interface Reportable {
   summary(): string;
 }
 
@@ -16,11 +13,18 @@ const oldCivic = {
   },
 };
 
-const printVehicle = (vehicle: Vehicle): void => {
-  console.log(`Name : ${vehicle.name}`);
-  console.log(`Year : ${vehicle.year}`);
-  console.log(`Broken? ${vehicle.broken}`);
-  console.log(vehicle.summary());
+const drink = {
+  color: 'red',
+  sugar: 40,
+  carbonated: false,
+  summary(): string {
+    return `My drink have a color ${this.color}`
+  }
+}
+
+const printSummary = (item: Reportable): void => {
+  console.log(item.summary());
 };
 
-printVehicle(oldCivic);
+printSummary(oldCivic);
+printSummary(drink);
