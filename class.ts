@@ -14,16 +14,16 @@ class Vehicle {
 const vehicle = new Vehicle('red');
 console.log(vehicle.color);
 
-// class Car extends Vehicle {
-//   // Overriding
-//   drive(): void {
-//     console.log('gas gas');
-//   }
-// }
+class Car extends Vehicle {
+  // Overriding
+  drive(): void {
+    console.log('gas gas');
+  }
 
-// const car = new Car();
-// car.drive();
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
+}
 
-// const vehicle = new Vehicle();
-// vehicle.drive();
-// vehicle.honk();
+const car = new Car(4, 'red');
+car.drive();
