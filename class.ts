@@ -1,3 +1,4 @@
+// Class adalah blueprint, ketika kita meng-overriding method parent ke child. Kita tidak bisa mengubah modifier nya
 class Vehicle {
   drive(): void {
     console.log('Brum brum');
