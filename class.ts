@@ -4,20 +4,25 @@ class Vehicle {
     console.log('Brum brum');
   }
 
+  constructor(public color: string) {}
+
   private honk(): void {
     console.log('beep');
   }
 }
 
-class Car extends Vehicle {
-  // Overriding
-  drive(): void {
-    console.log('gas gas');
-  }
-}
+const vehicle = new Vehicle('red');
+console.log(vehicle.color);
 
-const car = new Car();
-car.drive();
+// class Car extends Vehicle {
+//   // Overriding
+//   drive(): void {
+//     console.log('gas gas');
+//   }
+// }
+
+// const car = new Car();
+// car.drive();
 
 // const vehicle = new Vehicle();
 // vehicle.drive();
