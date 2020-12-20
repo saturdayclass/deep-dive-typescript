@@ -1,10 +1,10 @@
-// Class adalah blueprint, ketika kita meng-overriding method parent ke child. Kita tidak bisa mengubah modifier nya
+// Class adalah blueprint, ketika kita meng-overriding method parent ke child. Kita tidak bisa mengubah modifier nya. Secara default method dan property kita modifier nya adalah public
 class Vehicle {
-  drive(): void {
+  protected drive(): void {
     console.log('Brum brum');
   }
 
-  honk(): void {
+  private honk(): void {
     console.log('beep');
   }
 }
@@ -18,7 +18,6 @@ class Car extends Vehicle {
 
 const car = new Car();
 car.drive();
-car.honk();
 
 // const vehicle = new Vehicle();
 // vehicle.drive();
