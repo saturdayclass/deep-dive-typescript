@@ -2,7 +2,7 @@
 
 // Kenapa kita peduli dengan class? sama sepertihalnya interface. Class bisa kita reusable sehingga mempermudah proses development
 
-// Kita bisa menggunakan javascript ke dalam typescript, kita juga bisa menggunakan library js ke dalam typescript. Tapi tidak seperti ketika kita menggunakan-nya di js. Setiap library js yang ingin digunakan di typescript harus memiliki type defintion. @types
+// Kita bisa menggunakan javascript ke dalam typescript, kita juga bisa menggunakan library js ke dalam typescript. Tapi tidak seperti ketika kita menggunakan-nya di js. Setiap library js yang ingin digunakan di typescript harus memiliki type defintion file. @types
 class Vehicle {
   protected drive(): void {
     console.log('Brum brum');
